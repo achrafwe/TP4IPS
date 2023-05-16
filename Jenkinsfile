@@ -9,10 +9,8 @@ pipeline {
       steps {
         echo 'upgrading pip3'
         sh 'pip3 install --upgrade pip'
-      }
-      steps {
-       echo 'build'
-       sh 'pip3 install -r requirements.txt'
+        echo 'build'
+        sh 'pip3 install -r requirements.txt'
       }
     }
     stage('test') {
