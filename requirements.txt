@@ -4,5 +4,5 @@ itsdangerous==1.1.0
 Jinja2==2.10
 MarkupSafe==1.1.0
 Werkzeug==0.14.1
-xmlrunner==1.7.7
+unittest-xml-reporting==3.0.2
 PACKAGE_MANIFEST
