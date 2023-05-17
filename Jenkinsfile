@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        echo 'upgrading pip3'
-        sh 'pip3 install --upgrade pip'
+        // echo 'upgrading pip3'
+        // sh 'pip3 install --upgrade pip'
         echo 'build'
         sh 'pip3 install -r requirements.txt'
       }
@@ -13,7 +13,7 @@ pipeline {
 
       steps {
         echo 'test'
-        sh 'python test.py'
+        sh 'python3 test.py'
       }
       post {
         always {
