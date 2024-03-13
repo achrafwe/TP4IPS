@@ -14,13 +14,6 @@ pipeline {
             }
         }
         
-        stage('Package') {
-            steps {
-                // Package your application using Maven
-                sh 'mvn package'
-            }
-        }
-        
         stage('Deploy') {
             steps {
                 // Add your deployment steps here
