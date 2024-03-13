@@ -1,14 +1,5 @@
 pipeline {
-    agent any
-    
-    stages {
-        stage('Checkout') {
-            steps {
-                // Checkout your source code from your repository
-                git 'https://github.com/achrafwe/TP4IPS.git'
-            }
-        }
-        
+    agent any        
         stage('Build') {
             steps {
                 // Compile your Java project using Maven
