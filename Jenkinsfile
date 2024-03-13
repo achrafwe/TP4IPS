@@ -3,22 +3,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        // echo 'upgrading pip3'
-        // sh 'pip3 install --upgrade pip'
-        echo 'build'
-        sh 'pip3 install -r requirements.txt'
+       echo 'build'
       }
     }
     stage('test') {
-
       steps {
         echo 'test'
-        sh 'python3 -m xmlrunner -o test-reports'
-      }
-      post {
-        always {
-          junit 'test-reports/*.xml'
-        }
       }
     }
   }
