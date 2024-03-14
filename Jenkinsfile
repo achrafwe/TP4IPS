@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        // echo 'upgrading pip3'
+        // echo 'upgrading pip3' chefyuzcvc
         // sh 'pip3 install --upgrade pip'
         echo 'build'
         sh 'pip3 install -r requirements.txt'
